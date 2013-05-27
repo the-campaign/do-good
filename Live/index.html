@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	{block:Description}
+	<meta name="description" content="{MetaDescription}" />
+	{/block:Description}
+	<title>{Title}{block:PostTitle} - {PostTitle}{/block:PostTitle}</title> 
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link rel="shortcut icon" href="{Favicon}" />
+	<script type="text/javascript" src="http://static.tumblr.com/4horibg/SEblr4xct/css3-mediaqueries.js"></script>
+	<script type="text/javascript" src="http://static.tumblr.com/4horibg/Vfilr4yzq/cssua.js"></script>
+	
+	<!--[if lt IE 9]>
+	<script src="http://static.tumblr.com/4horibg/0F5lr4xg0/html5.js"></script>
+	<![endif]-->
+	<script type="text/javascript">
+	
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-19400273-2']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	
+	</script>
+	<!-- STYLES -->
+	<!-- STYLES -->
+	<!-- STYLES -->
+	<!-- STYLES -->
+	<style>
+	/* ============================== */
+	/* ! Layout for desktop version   */
+	/* ============================== */
+	* RESET */
+	html, body, div, span, applet, object, iframe,
+	h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+	a, abbr, acronym, address, big, cite, code,
+	del, dfn, em, img, ins, kbd, q, s, samp,
+	small, strike, strong, sub, sup, tt, var,
+	b, u, i, center,
+	dl, dt, dd, ol, ul, li,
+	fieldset, form, label, legend,
+	table, caption, tbody, tfoot, thead, tr, th, td,
+	article, aside, canvas, details, embed, 
+	figure, figcaption, footer, header, hgroup, 
+	menu, nav, output, ruby, section, summary,
+	time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+	}
+	.clear{
+		clear: both;
+	}
+	ul{
+		list-style-type:none;
+		margin:0;
+		padding:0;
+	}
+	li{
+		float: left;
+		padding-right: 5px;
+	}
+	hr {
+		border:0;
+		height:1px;
+		background-color:#BCBCBC;
+		box-shadow: 0px 1px 0px #fff;
+		margin:10px 0;
+	}
+	
+	h1{font-size: 16px;padding-bottom:5px !important;line-height:0;}
+	
+	h2{font-size:24px;}
+	
+	h3{font-size:14px;text-transform: lowercase;padding-bottom:0px;}
+	
+	h4{font-size:18px;}
+	
+	h5{font-size:16px;padding-bottom:5px;}
+	
+	h6{font-size:15px;}
+	
+	strong{
+		font-weight:700;
+	}
+	em {
+		font-style:italic;
+	}
+	a{color: #000;text-decoration: none;padding: 0;}
+	a:hover{color: #CCCCCC;text-decoration: underline;padding: 0;}
+	a:active{color: #000;text-decoration: none;padding: 0;}
+	a:visited{color: #666666;text-decoration: none;padding: 0;}
+	/* Selection colours (easy to forget) */
+	
+	::selection 	 	{background: rgb(255,255,158);}
+	::-moz-selection 	{background: rgb(255,255,158);}
+	img::selection 		{background: transparent;}
+	img::-moz-selection	{background: transparent;}
+	body {
+		-webkit-tap-highlight-color: rgb(255,255,158);
+		font-family: Helvetica, Arial, sans-serif;
+		font-size: 12px;
+		color: #666;
+	}
+	p{padding-bottom:0;margin-bottom:0;}
+	#leftside{
+		float: left;
+		padding-top:50px;
+	}
+	#rightside{
+		float: right;
+		padding-top:50px;
+	}
+    .profile{
+        width:100%;margin:0 0 35px 0;
+        }
+	.name {
+		float: left;	
+	}
+	.name a{
+		font-size:12px;
+		padding-top:5px;
+	}
+	.headlink{
+		padding:0;
+	}
+	.profile{
+		display:block;
+	}
+	.social{
+		float: right;
+	}
+	.othertumblrs{
+		padding-top:15px;
+	}
+	.subprojects{
+		color:#000;
+	}
+	.project{
+		padding-bottom:0px;
+	}
+	.social_twitter{
+		display: inline-block;
+		position: relative;
+		text-indent: -9999px;
+		width: 18px;
+		height: 18px;
+		background: url(http://static.tumblr.com/4horibg/uKqlm8pez/twitter.jpg) no-repeat;
+	}
+	.social_twitter span {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		background: url(http://static.tumblr.com/4horibg/CqNlm8per/twitter-over.jpg) no-repeat;
+		background-position: 0;
+		opacity: 0;
+		-webkit-transition: opacity 0s;
+		-moz-transition: opacity 0s;
+		-o-transition: opacity 0s;
+	}
+	.social_twitter:hover span {
+		opacity: .9;
+		-webkit-transition: opacity 0.9s;
+		-moz-transition: opacity 0.9s;
+		-o-transition: opacity 0.9s;
+	}
+	.social_dribbble{
+		display: inline-block;
+		position: relative;
+		text-indent: -9999px;
+		width: 18px;
+		height: 18px;
+		background: url(http://static.tumblr.com/4horibg/DK5lm8pdm/dribbble.jpg) no-repeat;
+	}
+	.social_dribbble span {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		background: url(http://static.tumblr.com/4horibg/X0clm8pdb/dribbble-over.jpg) no-repeat;
+		background-position: 0;
+		opacity: 0;
+		-webkit-transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s;
+		-o-transition: opacity 0.5s;
+	}
+	.social_dribbble:hover span {
+		opacity: .7;
+		-webkit-transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s;
+		-o-transition: opacity 0.5s;
+	}
+	.social_forrst{
+		display: inline-block;
+		position: relative;
+		text-indent: -9999px;
+		width: 18px;
+		height: 18px;;
+		background: url(http://static.tumblr.com/4horibg/5nRlm8pe3/forrst.jpg) no-repeat;
+	}
+	.social_forrst span {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		background: url(http://static.tumblr.com/4horibg/x1hlm8pdv/forrst-over.jpg) no-repeat;
+		background-position: 0;
+		opacity: 0;
+		-webkit-transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s;
+		-o-transition: opacity 0.5s;
+	}
+	.social_forrst:hover span {
+		opacity: .7;
+		-webkit-transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s;
+		-o-transition: opacity 0.5s;
+	}
+	.social_lastfm{
+		display: inline-block;
+		position: relative;
+		text-indent: -9999px;
+		width: 18px;
+		height: 18px;
+		background: url(http://static.tumblr.com/4horibg/BHWlm8pei/lastfm.jpg) no-repeat;
+	}
+	.social_lastfm span {
+		position: absolute;
+		top: 0; left: 0; bottom: 0; right: 0;
+		background: url(http://static.tumblr.com/4horibg/CeOlm8peb/lastfm-over.jpg) no-repeat;
+		background-position: 0;
+		opacity: 0;
+		-webkit-transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s;
+		-o-transition: opacity 0.5s;
+	}
+	.social_lastfm:hover span {
+		opacity: .7;
+		-webkit-transition: opacity 0.5s;
+		-moz-transition: opacity 0.5s;
+		-o-transition: opacity 0.5s;
+	}
+	.post_outercontainer{border-bottom:1px solid #D1D1D1;margin-bottom:30px;}
+	.header_container{margin-bottom:10px; !important}
+	.left_container{float:left;text-align:left;}
+	.right_container{float:right;text-align:right;font-size:11px;}
+	.title{font-size:11px;color:#333;text-transform:uppercase;margin-bottom:0;}
+	.date{font-size:10px;color:#333;text-transform:uppercase;}
+	.reblog{}
+	.ua-firefox .reblog{padding-bottom:5px;}
+	.notes{float:right;}
+	.post{width:98%;outline: 5px solid #ffffff;
+	-webkit-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);
+	box-shadow: 0px 0px 10px 2px rgba(0, 0, 0, 0.5);margin:10px 0 20px 0;
+	}
+	.ua-firefox .post{outline: none;}
+	.previous{display:inline;padding-right:5px;}
+	.pagination_numbers{display:inline;}
+	.next{display:inline;padding-left:5px;}
+	.bottom_spacer{padding-bottom:15px;}
+	
+	
+	/*
+	    // ========================================== \\
+	   ||                                              ||
+	   ||               MEDIA QUERIES                  ||
+	   ||                                              ||
+	    \\ ========================================== //
+	*/
+	
+	
+	/* --------------------------------------------
+	  iPad in landscape
+	-------------------------------------------- */
+	
+	/* 	
+		TO PREVIEW ON THE DESKTOP, REPLACE THE QUERY WITH THE FOLLOW:
+		@media (max-width: 1024px) {  } 
+		REAL QUERY
+		@media (max-device-width: 1024px) and (orientation: landscape) { }
+	*/
+	
+    
+        @media (min-width: 1024px) { 
+                body{font-size:14px !important;}
+    
+    
+    
+    }
+	@media (max-width: 1024px) { 
+	
+	
+	
+	
+	}
+	
+	
+	/* --------------------------------------------
+	  iPad in portrait
+	-------------------------------------------- */
+	
+	/* 	
+		TO PREVIEW ON THE DESKTOP, REPLACE THE QUERY WITH THE FOLLOW:
+		@media (max-width: 768px) {  } 
+		
+		REAL QUERY     
+		@media (max-device-width: 1024px) and (orientation: portrait) { }
+	*/
+	
+		@media (max-width: 770px) {  
+			#leftside{
+				float: left;
+				padding-top:15px;
+				width: 96%;
+				margin: 0 10px;
+			
+			}
+			#rightside{
+				float: left;
+				padding-top:15px;
+				width: 95%;
+				margin: 0 10px;
+			}
+		.desktop{display:none;}
+	
+	}
+	@media (max-device-width: 1024px) and (orientation: portrait) { 
+	
+	#leftside{
+			float: left;
+			padding-top:15px;
+			width: 96%;
+			margin: 0 10px;
+		
+		}
+		#rightside{
+			float: left;
+			padding-top:15px;
+			width: 95%;
+			margin: 0 10px;
+		}
+	.desktop{display:none;}
+	
+	}
+	/* --------------------------------------------
+	  Mobile
+	-------------------------------------------- */
+	
+	@media handheld and (max-width: 480px),
+	       screen and (max-device-width: 480px),
+	       screen and (max-width: 600px) {
+	       
+	       
+	       #leftside{
+	       	float: left;
+	       	padding-top:15px;
+	
+	       
+	       }
+	       #rightside{
+	       	float: left;
+	       	padding-top:15px;
+	
+	       }
+	       .post{width:100%;}
+	       
+	
+			}
+	
+	/* CSS Resets */
+	
+	html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,address,cite,code,del,dfn,em,img,ins,q,small,strong,sub,sup,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{border:0;margin:0;padding:0}article,aside,figure,figure img,figcaption,hgroup,footer,header,nav,section,video,object{display:block}a img{border:0}figure{position:relative}figure img{width:100%}
+	
+	
+	/* ==================================================================================================================== */
+	/* ! The 1140px Grid V2 by Andy Taylor \ http://cssgrid.net \ http://www.twitter.com/andytlr \ http://www.andytlr.com   */
+	/* ==================================================================================================================== */
+	
+	.container {
+	padding-left: 20px;
+	padding-right: 20px;
+	}
+	
+	.row {
+	width: 100%;
+	max-width: 1140px;
+	min-width: 755px;
+	margin: 0 auto;
+	overflow: hidden;
+	}
+	
+	.onecol, .twocol, .threecol, .fourcol, .fivecol, .sixcol, .sevencol, .eightcol, .ninecol, .tencol, .elevencol {
+	margin-right: 3.8%;
+	float: left;
+	min-height: 1px;
+	}
+	
+	.row .onecol {
+	width: 4.85%;
+	}
+	
+	.row .twocol {
+	width: 13.45%;
+	}
+	
+	.row .threecol {
+	width: 22.05%;
+	}
+	
+	.row .fourcol {
+	width: 30.75%;
+	}
+	
+	.row .fivecol {
+	width: 39.45%;
+	}
+	
+	.row .sixcol {
+	width: 48%;
+	}
+	
+	.row .sevencol {
+	width: 56.75%;
+	}
+	
+	.row .eightcol {
+	width: 65.4%;
+	}
+	
+	.row .ninecol {
+	width: 74.05%;
+	}
+	
+	.row .tencol {
+	width: 82.7%;
+	}
+	
+	.row .elevencol {
+	width: 91.35%;
+	}
+	
+	.row .twelvecol {
+	width: 100%;
+	float: left;
+	}
+	
+	.last {
+	margin-right: 0px;
+	}
+	
+	img, object, embed {
+	max-width: 100%;
+	}
+	
+	img {
+		height: auto;
+	}
+	
+	
+	/* Smaller screens */
+	
+	@media only screen and (max-width: 1023px) {
+	
+		body {
+		font-size: 0.8em;
+		line-height: 1.2;
+		}
+		
+		}
+	
+	
+	/* Mobile */
+	
+	@media handheld, only screen and (max-width: 767px) {
+	
+		body {
+		-webkit-text-size-adjust: none;
+		}
+		
+		.row, body, .container {
+		width: 100%;
+		min-width: 0;
+		margin-left: 0px;
+		margin-right: 0px;
+		padding-left: 0px;
+		padding-right: 0px;
+		}
+		
+		.row .onecol, .row .twocol, .row .threecol, .row .fourcol, .row .fivecol, .row .sixcol, .row .sevencol, .row .eightcol, .row .ninecol, .row .tencol, .row .elevencol, .row .twelvecol {
+		width: auto;
+		float: none;
+	
+	
+		}
+	
+	}
+	</style> 
+	<!-- STYLES -->
+	<!-- STYLES -->
+	<!-- STYLES -->
+	<!-- STYLES -->
+</head>
+
+
+<body>
+
+<div class="container">
+	<div class="row">
+		<div class="fivecol" id="leftside">
+		    <div class="profile"><img src="{PortraitURL-128}"></div>
+			<div class="name">
+					<h1>manikrathee</h1>
+					<a class="headlink" href="http://manikrathee.tumblr.com">manikrathee.tumblr.com</a>
+			</div>
+			<div class="social">
+				<ul>
+					<li><a class="social_twitter" href="http://www.twitter.com/manikrathee" target="_blank" class="Twitter" title="Twitter"><span></span>1</a></li>
+					<li><a class="social_dribbble" href="http://www.dribbble.com/manikrathee" target="_blank" class="Dribbble" title="Dribbble"><span></span>2</a></li>
+					<li><a class="social_forrst" href="http://forrst.com/people/Manikrathee" target="_blank" class="Forrst" title="Forrst"><span></span>3</a></li>
+					<li><a class="social_lastfm" href="http://www.last.fm/user/mrathee" target="_blank" class="LastFM" title="LastFM"><span></span>4</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+			<div class="othertumblrs">
+				<p>other tumblrs:</p><hr>
+				<div class="project">
+					<h3><a href="http://www.manikratheephotography.com" target="_blank">Manik Rathee Photography</a></h3>
+					<p>Wedding and Event Photographer in New Jersey.</p>
+				</div>
+				<hr>
+				<div class="project">
+					<h3><a href="http://hopewillseeusthrough.tumblr.com" target="_blank">Hope Will See Us Through</a></h3>
+					<p>Tumblr featuring lyrics designed into typographic pieces.</p>
+				</div>
+					<hr>
+				<div class="project">
+					<h3><a href="http://www.manikrathee.com" target="_blank">Graphic / UI Design</a></h3>
+					<p>Graphic and User Interface Designer: Manik Rathee</p>
+				</div>
+				<hr>
+				<!-- PAGINATION -->
+				{block:IndexPage}
+		          <div class="pagination desktop">
+		                  {block:Pagination}
+		                          {block:PreviousPage}<div class="previous">
+		                              <a href="{PreviousPage}">Previous</a></div>
+		                          {/block:PreviousPage}
+		                          	<div class="pagination_numbers">-&nbsp; {CurrentPage} of {TotalPages} &nbsp; - </div>
+		                          {block:NextPage}<div class="next">
+		                          	<a href="{NextPage}">Next</a></div>
+		                           {/block:NextPage}
+		                   {/block:Pagination}	
+		          </div>
+        {/block:IndexPage}
+				<!-- END PAGINATION -->	
+			</div>
+
+		
+		
+		</div>
+
+		<div class="sevencol last"id="rightside">
+		
+		{block:Posts} 				{block:Photo}
+				<div class="post_outercontainer photo{block:PermalinkPage} post_permalink{/block:PermalinkPage}">
+					<div class="header_container">
+						<div class="left_container">
+							{block:Title}
+							<div class="title">{Title}</div>
+							{/block:Title}
+							<div class="date">{block:Date}{MonthNumberWithZero}-{DayOfMonthWithZero}-{ShortYear}{/block:Date} </div>
+						</div>
+						<div class="right_container">
+							<div class="reblog"><a href="{ReblogURL}" class="reblog-button">reblog<span></span></a></div>
+							<div class="notes">{block:NoteCount} {NoteCountWithLabel} {/block:NoteCount}</div>
+						</div>
+						<div class="clear"></div>
+					</div>
+					<div class="post"><img src="{PhotoURL-500}" width="100%"></div>
+					<div class="reblog"></div>
+					<div class="permalink"></div>
+				</div>
+				{/block:Photo}
+				{/block:Posts}
+				
+				
+				
+				
+				
+				
+												
+		<!-- PAGINATION -->
+		{block:IndexPage}
+		      <div class="pagination bottom_spacer">
+		              {block:Pagination}
+		                      {block:PreviousPage}
+		                          <a href="{PreviousPage}">Previous</a>
+		                      {/block:PreviousPage}
+		                      	<div class="pagination_numbers">{CurrentPage} of {TotalPages}</div>
+		                      {block:NextPage}
+		                      	<a href="{NextPage}">Next</a>
+		                       {/block:NextPage}
+		               {/block:Pagination}	
+		      </div>
+		{/block:IndexPage}
+		<!-- END PAGINATION -->						
+		</div>
+	</div>
+</div>
+
+</body>
+
+</html>
