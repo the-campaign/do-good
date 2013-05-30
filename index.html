@@ -17,7 +17,7 @@
   <meta itemprop="description" content="">
   <meta itemprop="image" content="/img/root/fb-thumb.jpg">
   
-  <title></title>
+  <title>Do Good</title>
   
   <meta property="og:title" content="">
   <meta property="og:type" content="website">
@@ -35,10 +35,84 @@
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
 
 	<style>
-	
+    body {
+      background: #3872c7;
+      font-family: helvetica, arial, sans-serif;
+      color: #e3e3e3;
+      text-shadow: o 1px 0 #2458a3;
+      padding: 0;
+      margin: 0;
+    }
+    header {
+      padding: 20px 20px 100px;
+    }
+    header a {
+      text-decoration: none;
+    }
+    h1{
+      text-transform: uppercase;
+      font-size: 40px;
+      font-weight: 700;
+      line-height: 1;
+      color: rgba(124,190,255,1);
+    }
+    section {
+      padding: 125px 100px;
+      border-top: 1px solid rgba(124,190,255,1);
+      border-bottom: 1px solid rgba(124,190,255,1);
+    }
+    section p {
+      color: rgba(124,190,255,1);
+      text-transform: lowercase;
+      margin: 0;
+      line-height: 1;
+      font-size: 12px;
+      font-weight: 700;
+    }
+    section h2 {
+      margin: 0;
+      line-height: 1;
+      font-size: 50px;
+      text-transform: lowercase;
+      font-weight: 700;
+    }
+    section a{
+      display: inline-block;
+      vertical-align: top;
+      zoom: 1;
+      font-size: 10px;
+      font-weight: 700;
+      text-decoration: none;
+      color: #e3e3e3;
+      padding: 15px;
+      border: 1px solid rgba(124,190,255,1);
+    }
 	</style> 
 </head>
 <body>
+  <header>
+    <a href="" title="" itemprop="url">
+      <h1>Do<br>Go<br>od</h1>
+    </a>
+  </header>
+  
+  <section>
+    <p>Wednesday, January 02, 2013</p>  
+    <h2>leave a dollar in a vending machine</h2>
+  </section>
+  
+  <section>
+    <a href="#" title="I did this." itemprop="url">I did this.</a>
+    <a href="#" title="I want to suggest a DoGood." itemprop="url">I want to suggest a DoGood.</a>
+    <div class="submit">
+      Beep bop boop
+    </div> <!-- /submit -->
+  </section>
+  
+  <footer>
+    <small>DoGood is a project by Manik Rathee</small>
+  </footer>
+  <!-- 
 				{block:IndexPage}
 		          <div class="pagination desktop">
 		                  {block:Pagination}
@@ -54,12 +128,8 @@
         {/block:IndexPage}
 
 		
-		
-		</div>
-
-		<div class="sevencol last"id="rightside">
-		
-		{block:Posts} 				{block:Photo}
+		{block:Posts} 				
+			{block:text}
 				<div class="post_outercontainer photo{block:PermalinkPage} post_permalink{/block:PermalinkPage}">
 					<div class="header_container">
 						<div class="left_container">
@@ -79,10 +149,9 @@
 					<div class="permalink"></div>
 				</div>
 				{/block:Photo}
-				{/block:Posts}
+			{/block:Posts}
 				
 												
-		<!-- PAGINATION -->
 		{block:IndexPage}
 		      <div class="pagination bottom_spacer">
 		              {block:Pagination}
@@ -95,8 +164,9 @@
 		                       {/block:NextPage}
 		               {/block:Pagination}	
 		      </div>
-		{/block:IndexPage}
-		<!-- END PAGINATION -->						
+		{/block:IndexPage} -->
+
+
 
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
