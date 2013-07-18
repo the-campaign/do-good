@@ -7,43 +7,42 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="HandheldFriendly" content="true" />
-  
-  <meta name="author" content="">
-  <meta name="description" content="">
-  <meta name="keyword" content="">
-  <link rel="author" href="http://\\\\\\">
-  
+
+  <meta name="author" content="Manik Rathee">
+  <meta name="description" content="DoGood is a simple project designed to help make the world a little better each day.">
+  <meta name="keyword" content="good, do good, do, pay it forward, help others, do some good">
+  <link rel="author" href="http://www.manikrathee.com">
+
   <meta itemprop="name" content="">
   <meta itemprop="description" content="">
   <meta itemprop="image" content="/img/root/fb-thumb.jpg">
-  
+
   <title>Do Good</title>
-  
-  <meta property="og:title" content="">
+
+  <meta property="og:title" content="Do Good">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="http://">
+  <meta property="og:url" content="http://do-good.io">
   <meta property="og:image" content="/img/root/fb-thumb.jpg">
-  
-  <meta name="twitter:creator" content="@username">
-  <link rel="publisher" href="https://plus.google.com/\\\\\\\\\\\\\\\\\\\\?rel=author">
-  
+
+  <meta name="twitter:creator" content="@manikrathee">
+  <link rel="publisher" href="https://plus.google.com/118337203025285830553?rel=author">
+
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon-precomposed" href="/apple-touch-icon-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="57x57" href="/apple-touch-icon-57x57-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="72x72" href="/apple-touch-icon-72x72-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="114x114" href="/apple-touch-icon-114x114-precomposed.png">
   <link rel="apple-touch-icon-precomposed" sizes="144x144" href="/apple-touch-icon-144x144-precomposed.png">
-
 	<style>
     body {
       background: #3872c7;
-      font-family: helvetica, arial, sans-serif;
+      font-family: "soleil",helvetica, arial, sans-serif;
       color: #e3e3e3;
       text-shadow: o 1px 0 #2458a3;
       padding: 0;
       margin: 0;
     }
-    header {      
+    header {
       text-align: center;
       margin: 0;
       padding: 0;
@@ -112,12 +111,18 @@
       text-align: center;
       border-top: 1px solid rgba(124,190,255,1);
     }
-    footer .manik {
-      display: block;
-      padding: 10px 0;
-      text-decoration: none;
+    footer small, footer p{
       font-size: 12px;
-      color: rgba(124,190,255,1);
+      letter-spacing: 0.8px;
+      font-weight: 700;
+      color: rgba(255,255,255,0.5);
+    }
+    footer .made-by {
+      color: rgba(255,255,255,0.5);
+    }
+    footer .made-by:hover {
+      text-decoration: none;
+      color: rgba(255,255,255,1);
     }
     footer .campaign {
       display: block;
@@ -137,7 +142,7 @@
     footer .campaign:hover {
       opacity: 1;
     }
-    
+
     @media (min-width: 768px) {
       header{
         padding: 20px;
@@ -147,98 +152,76 @@
         margin: 0;
       }
     }
-	</style> 
+	</style>
+  <link rel="stylesheet" href="http://assets.manikrathee.com/global/fonts/symbolset/ss-gizmo.css" type="text/css" media="screen" />
+  <link rel="stylesheet" href="http://assets.manikrathee.com/global/fonts/symbolset/ss-social.css" type="text/css" media="screen" />
+  <script type="text/javascript" src="//use.typekit.net/gck7fun.js"></script>
+  <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 </head>
 <body>
   <header>
-    <a href="" title="" itemprop="url">
+    <a href="/" title="DoGood is a simple project designed to help make the world a little better each day." itemprop="url">
       <h1>DoGood</h1>
     </a>
   </header>
-  
-  <section>
-    <p>Wednesday, January 02, 2013</p>  
-    <h2>leave a dollar in a vending machine</h2>
-  </section>
-  
-  <section>
-    <a href="#" title="I did this." itemprop="url">I did this.</a>
-    <a href="#" title="I want to suggest a DoGood." itemprop="url">I want to suggest a DoGood.</a>
-    <div class="submit">
-      Submit
-    </div> <!-- /submit -->
-  </section>
-  
+
+  {block:Posts}
+    {block:text}
+    <section>
+      <p>{DayOfWeek}, {Month}{DayOfMonth}, {Year}</p>
+      <h2>{Body}</h2>
+    </section>
+
+      <div class="reblog"></div>
+      <div class="permalink"></div>
+    {/block:text}
+
+    <section>
+      <a href="#" class="i-did-this" title="I did this." itemprop="url">
+        I did this.
+      </a>
+
+      <a href="#" title="I want to suggest a DoGood." itemprop="url">
+        I want to suggest a DoGood.
+      </a>
+
+      <div class="submit">
+        Submit
+      </div> <!-- /submit -->
+
+      <ul class="share">
+        <li>
+          <a href="{ReblogURL}" title="" itemprop="url"><span class="ss-icon">sync</span> Reblog</a>
+        </li>
+        <li>
+          <a href="{Permalink}" title="" itemprop="url"><span class="ss-icon">link</span> Permalink</a>
+        </li>
+        <li>
+          <a href="" title="" itemprop="url"><span class="ss-icon ss-social">twitter</span> Share on Twitter</a></li>
+      </ul>
+    </section>
+  {/block:Posts}
+
+
+
   <footer>
-    <a class="manik" href="http://www.manikrathee.com" title="Manik Rathee" itemprop="url">
-      <small>DoGood is a project by Manik Rathee</small>
-    </a>
-    
-    <a class="campaign" href="http://www.campaign.is" title="Campaign.is" itemprop="url">
+
+      <small>DoGood is a project by
+        <a class="made-by" href="http://www.manikrathee.com" title="Manik Rathee" itemprop="url">Manik Rathee</a>,
+        <a class="made-by" href="http://www.ryanroche.com/" title="Ryan Roche" itemprop="url">Ryan Roche</a>, and
+        <a class="made-by" href="http://zachstubenvoll.com/" title="Zach Stubenvoll" itemprop="url">Zach Stubenvoll</a>
+      </small>
+      <p>Made With <span class="ss-icon">heart</span> in San Francisco, Ohio and Chicago</p>
+   <!--  <a class="campaign" href="http://www.campaign.is" title="Campaign.is" itemprop="url">
       <span></span>
-    </a>
+    </a> -->
   </footer>
-  <!-- 
-				{block:IndexPage}
-		          <div class="pagination desktop">
-		                  {block:Pagination}
-		                          {block:PreviousPage}<div class="previous">
-		                              <a href="{PreviousPage}">Previous</a></div>
-		                          {/block:PreviousPage}
-		                          	<div class="pagination_numbers">-&nbsp; {CurrentPage} of {TotalPages} &nbsp; - </div>
-		                          {block:NextPage}<div class="next">
-		                          	<a href="{NextPage}">Next</a></div>
-		                           {/block:NextPage}
-		                   {/block:Pagination}	
-		          </div>
-        {/block:IndexPage}
-
-		
-		{block:Posts} 				
-			{block:text}
-				<div class="post_outercontainer photo{block:PermalinkPage} post_permalink{/block:PermalinkPage}">
-					<div class="header_container">
-						<div class="left_container">
-							{block:Title}
-							<div class="title">{Title}</div>
-							{/block:Title}
-							<div class="date">{block:Date}{MonthNumberWithZero}-{DayOfMonthWithZero}-{ShortYear}{/block:Date} </div>
-						</div>
-						<div class="right_container">
-							<div class="reblog"><a href="{ReblogURL}" class="reblog-button">reblog<span></span></a></div>
-							<div class="notes">{block:NoteCount} {NoteCountWithLabel} {/block:NoteCount}</div>
-						</div>
-						<div class="clear"></div>
-					</div>
-					<div class="post"><img src="{PhotoURL-500}" width="100%"></div>
-					<div class="reblog"></div>
-					<div class="permalink"></div>
-				</div>
-				{/block:Photo}
-			{/block:Posts}
-				
-												
-		{block:IndexPage}
-		      <div class="pagination bottom_spacer">
-		              {block:Pagination}
-		                      {block:PreviousPage}
-		                          <a href="{PreviousPage}">Previous</a>
-		                      {/block:PreviousPage}
-		                      	<div class="pagination_numbers">{CurrentPage} of {TotalPages}</div>
-		                      {block:NextPage}
-		                      	<a href="{NextPage}">Next</a>
-		                       {/block:NextPage}
-		               {/block:Pagination}	
-		      </div>
-		{/block:IndexPage} -->
-
-
 
 	<script type="text/javascript">
 	  var _gaq = _gaq || [];
 	  _gaq.push(['_setAccount', 'UA-40787829-2']);
 	  _gaq.push(['_trackPageview']);
-	
+
 	  (function() {
 	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
 	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
